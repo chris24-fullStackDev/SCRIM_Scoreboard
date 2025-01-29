@@ -1,0 +1,11 @@
+.app-container {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    max-width: 800px;
+    height: 420px;
+    margin: auto;
+}
+
+p {
+    font-size: 15px;
+}
