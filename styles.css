@@ -20,12 +20,6 @@ body {
     width: 780px;
     height: 370px;
     gap: 5px;
-   
-    
-}
-#border-global {
-    border: 1px solid rgb(0, 0, 0);
-    height: 370px;
 }
 
 .team1-container, .team2-container {
@@ -38,10 +32,81 @@ body {
     object-fit: cover;
 }
 .mid-container {
-    flex-grow: 1;
+    width: 377px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
 }
+
 .app-header {
     width: 100%;
     height: 82px;
     object-fit: cover;
+}
+
+
+.app-content {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/HomeCourt.jpgs");
+    width: 377px;
+    height: 284px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+    border: 1px solid green;
+}
+
+
+.left-team-score {
+    display: flex;
+    flex-direction: column;
+    width: 99px;
+    height: 100%;
+    border: 1px solid rgb(255, 0, 0);
+   
+}
+
+.team-homecourt {
+    width: 99px;
+    height: 135px;
+    
+    
+}
+
+.score-box {
+    width: 99px;
+    height: 78px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.team-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.btn-points {
+    width: 99px;
+    height: 284px;
+    border: 1px solid red;
 }
