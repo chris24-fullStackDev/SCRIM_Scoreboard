@@ -1,6 +1,10 @@
 body {
     padding-top: 10%;
 }
+@font-face {
+    font-family: digitalNumber;
+    src: url("fonts/DigitalNumbers-Regular.ttf");
+}
 
 .main-container {
     box-sizing: border-box;
@@ -106,6 +110,8 @@ h2 {
 }
 p {
     font-size: 48px;
+    font-family: digitalNumber;
+    color: #ff0000;
 }
 
 .btn-points-container {
@@ -115,7 +121,7 @@ p {
     align-items: center;
     width: 99px;
     height: 284px;
-    border: 1px solid rgb(4, 0, 255);
+    
 }
 
 .points-container {
@@ -125,7 +131,6 @@ p {
     align-items: center;
     width: 99px;
     height: 100%;
-    border: 1px solid rgb(0, 0, 0);
 }
 
 button {
