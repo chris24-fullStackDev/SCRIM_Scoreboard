@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="main-container">
-       <div class="app-container">
-            <div class="team1-container" id="border-global">
-                <img src="images/Lakers1.jpg" class="team-img" alt="Lakers Logo">
+      <div class="app-container">
+        <div class="team1-container" id="border-global">
+          <img src="images/Lakers1.jpg" class="team-img" alt="Lakers Logo" />
+        </div>
+
+        <div class="mid-container" id="border-global">
+          <div class="header-text">
+            <img class="app-header" src="images/finals-header.jpg" />
+          </div>
+
+          <section class="app-content">
+            <!--^  LEFT TEAM CONTAINER SCORE-->
+            <div class="box-left">
+              <section class="left-team-score">
+                <div class="team-homecourt">
+                  <div class="team-header">
+                    <h2>H O M E</h2>
+                  </div>
+                  <div class="score-box">
+                    <p>29</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="btn-points-container">
+                <div class="points-container">
+                  <button class="img-button">
+                    <img class="bg-btn" src="images/basketball-btn.png" />
+                  </button class="img-button">
+                </div>
+                <div class="points-container">
+                  <button class="img-button">
+                    <img class="bg-btn" src="images/basketball-btn.png" />
+                  </button class="img-button">
+                </div>
+                <div class="points-container">
+                  <button class="img-button">
+                    <img class="bg-btn" src="images/basketball-btn.png" />
+                  </button class="img-button">
+                </div>
+              </section>
             </div>
-
-            <div class="mid-container" id="border-global">
-                
-
-                    <div class="header-text">
-                        <img class="app-header" src="images/finals-header.jpg">
+           <!--^  QUARTER RECAP CONTAINER SCORE-->
+            <div class="box-mid">
+                <section class="quarter-info">
+                    <div class="quarter-container">
+                        <div class="quarter-header">
+                            <h2 class="quarter-fonts">Q T R</h2>
+                        </div>
+                        <div class="quarter-box">
+                            <p class="quarter">01</p>
+                        </div>
                     </div>
-                    
-                    <section class="app-content">
-                       
-                        <div class="box-left">
-                            <section class="left-team-score" >
-                                <div class="team-homecourt">
-                                    <div class="team-header">
-                                        <h2>H O M E</h2>
-                                    </div>
-                                    <div class="score-box">
-                                        <p>29</p>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="btn-points-container">
-                                <div class="points-container">
-                                    
-                                    <button>
-                                         <img class="bg-btn" src="images/basketball-btn.png">
-                                    </button>
-                                   
-                                </div>
-                                <div class="points-container">
-                                    
-                                    <button>
-                                         <img class="bg-btn" src="images/basketball-btn.png">
-                                    </button>
-                                   
-                                </div>
-                                <div class="points-container">
-                                    
-                                    <button>
-                                         <img class="bg-btn" src="images/basketball-btn.png">
-                                    </button>
-                                   
-                                </div>
-                            </section>   
-                        </div>
-
-                        <div class="box-mid">
-                            <section class="teamscores-recap">
-
-                            </section>
-                        </div>
-                    
-                        
-
-                        <section class="right-team-score">
-
-                        </section>
-
-                    </section>
-                
-          
+              </section>
+              <!--* QUARTER BUTTONS-->
+              <section class="quarter-btn-container">
+                <button class="quarter-buttons">END QTR</button>
+                <button class="quarter-buttons">NEXT QTR</button>
+              </section>
+              <!--* TEAM ICONS-->
+              <section class="team-icons">
+                <div class="team-icon">
+                  <img src="images/iconLakers.jpgs" alt="Home Icon" />
+                </div>
+                <button class="reset-button"></button> 
+                <div class="team-icon">
+                  <img src="images/icon-gsw.jpgs" alt="Away Icon" />
+                </div>
+              </section>
             </div>
+            <!--^  RIGHT TEAM CONTAINER SCORE -->
+            <section class="right-team-score"></section>
+          </section>
+        </div>
 
-            <div class="team2-container" id="border-global">
-                <img class="team-img" src="images/GSW1.jpg">
-               
-            </div>
-
-       </div>
+        <div class="team2-container" id="border-global">
+          <img class="team-img" src="images/GSW1.jpg" />
+        </div>
+      </div>
     </div>
-        
-</body>
+  </body>
 </html>
