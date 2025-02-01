@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SCOREBOARD PROJECT</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,24 +33,24 @@
                     <h2>H O M E</h2>
                   </div>
                   <div class="score-box">
-                    <p>29</p>
+                    <p id="home-score">29</p>
                   </div>
                 </div>
               </section>
 
               <section class="btn-points-container">
                 <div class="points-container">
-                  <button class="img-button">
+                  <button class="img-button" id="home-plus1-btn">
                     <img class="bg-btn" src="images/basketball-btn.png" />
                   </button class="img-button">
                 </div>
                 <div class="points-container">
-                  <button class="img-button">
+                  <button class="img-button" id="home-plus2-btn">
                     <img class="bg-btn" src="images/basketball-btn.png" />
                   </button class="img-button">
                 </div>
                 <div class="points-container">
-                  <button class="img-button">
+                  <button class="img-button" id="home-plus3-btn" >
                     <img class="bg-btn" src="images/basketball-btn.png" />
                   </button class="img-button">
                 </div>
@@ -64,28 +64,77 @@
                             <h2 class="quarter-fonts">Q T R</h2>
                         </div>
                         <div class="quarter-box">
-                            <p class="quarter">01</p>
+                            <p class="quarter" id="quarter-board">01</p>
                         </div>
                     </div>
               </section>
               <!--* QUARTER BUTTONS-->
               <section class="quarter-btn-container">
-                <button class="quarter-buttons">END QTR</button>
-                <button class="quarter-buttons">NEXT QTR</button>
+                <button class="quarter-buttons" id="end-quarter-btn">END QTR</button>
+                <button class="quarter-buttons" id="end-quarter-btn">NEXT QTR</button>
               </section>
               <!--* TEAM ICONS-->
               <section class="team-icons">
                 <div class="team-icon">
-                  <img src="images/iconLakers.jpgs" alt="Home Icon" />
+                  <img class="team-icon-size" src="images/iconLakers.jpg" alt="Home Icon" />
                 </div>
-                <button class="reset-button"></button> 
+                <button class="team-icon reset" id="reset-btn">
+                    <img class="reset-img" src="images/reset.png">
+                </button> 
                 <div class="team-icon">
-                  <img src="images/icon-gsw.jpgs" alt="Away Icon" />
+                  <img class="team-icon-size" src="images/icon-gsw.jpg" alt="Away Icon" />
                 </div>
               </section>
+              <!--* QUARTER HEADER-->
+              <div class="quarter-recap-header">QUARTER RECAP</div>
+
+              <!--*QUARTER SCORE RECAP BOXES-->
+                <section class="score-recap-container">
+                    <div class="team-quarter-score" id="home-quarter-score1">23</div>
+                    <div class="team-quarter-score" id="home-quarter-score2"></div>
+                    <div class="team-quarter-score" id="home-quarter-score3"></div>
+                    <div class="team-quarter-score" id="home-quarter-score4"></div>
+                    <div class="team-quarter-score" id="">1<sup>st</sup></div>
+                    <div class="team-quarter-score" id="">2<sup>nd</sup></div>
+                    <div class="team-quarter-score" id="">3<sup>rd</sup></div>
+                    <div class="team-quarter-score" id="">4<sup>th</sup></div>
+                    <div class="team-quarter-score" id="away-quarter-score1"></div>
+                    <div class="team-quarter-score" id="away-quarter-score2"></div>
+                    <div class="team-quarter-score" id="away-quarter-score3"></div>
+                    <div class="team-quarter-score" id="away-quarter-score4"></div>
+                </section>
+
             </div>
             <!--^  RIGHT TEAM CONTAINER SCORE -->
-            <section class="right-team-score"></section>
+            <div class="box-right">
+                <section class="right-team-score">
+                    <div class="team-homecourt">
+                        <div class="team-header">
+                          <h2>G U E S T</h2>
+                        </div>
+                        <div class="score-box">
+                          <p id="guest-score">29</p>
+                        </div>
+                </section>
+
+                <section class="btn-points-container">
+                    <div class="points-container">
+                      <button class="img-button" id="guest-point1-btn">
+                        <img class="bg-btn" src="images/basketball-btn.png" />
+                      </button class="img-button">
+                    </div>
+                    <div class="points-container">
+                      <button class="img-button" id="guest-point2-btn">
+                        <img class="bg-btn" src="images/basketball-btn.png" />
+                      </button class="img-button">
+                    </div>
+                    <div class="points-container">
+                      <button class="img-button" id="guest-point3-btn">
+                        <img class="bg-btn" src="images/basketball-btn.png" />
+                      </button class="img-button">
+                    </div>
+                  </section>
+            </div>
           </section>
         </div>
 
@@ -93,6 +142,14 @@
           <img class="team-img" src="images/GSW1.jpg" />
         </div>
       </div>
+
+      <footer class="app-footer">
+        <ul class="footer-content">
+            <li><a href="https://scrimba.com/" target="_blank">Learn SCRIMBA Scoreboard SOLO Project</a></li>
+            <li><a href="#">Layout in Figma Desktop</a></li>
+            <li>Layout and coded by: Chris24.dev</li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
