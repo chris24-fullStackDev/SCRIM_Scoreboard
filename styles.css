@@ -146,12 +146,22 @@ p {
         cursor: pointer;
         border: none;
         border-radius: 50%;
-
     }
+.img-button:hover {
+        box-shadow: 1px 1px 2px rgb(0, 255, 42);
+        transition: 0.3s ease;
+}
+
+.img-button:focus {
+    outline: none;
+    box-shadow: 2px 2px 4px yellow;  
+}
+
     .bg-btn {
         width: 52px;
         height: 60px;
     }
+
     
 .box-mid {
     display: flex;
