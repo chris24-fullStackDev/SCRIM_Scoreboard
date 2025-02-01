@@ -31,8 +31,6 @@ let guestScoreMain = 0;
 let quarterScore = 0;
 let quarterValue = 1;
 
-
-
 function homePlus1() {
     homeScoreMain += 1;
     homeScore.textContent = homeScoreMain;
@@ -63,7 +61,7 @@ function guestPlus3() {
 
 function endQuarter() {
     homeQuarterScore1.textContent = homeScoreMain;
-    quarterScore +=  homeScoreMain;
+    guestQuarterScore1.textContent = guestScoreMain;
 }
 
 function nextQuarter() {
@@ -71,4 +69,10 @@ function nextQuarter() {
     quarterBoard.textContent = quarterValue;
 }
 
-console.log(homeScoreMain)
+function reset() {
+    homeScoreMain = 0;
+    guestScoreMain = 0;
+    homeScore.textContent = homeScoreMain;
+    guestScore.textContent = guestScoreMain;
+    quarterBoard.textContent = 1;
+}
