@@ -33,24 +33,24 @@
                     <h2>H O M E</h2>
                   </div>
                   <div class="score-box">
-                    <p id="home-score">29</p>
+                    <p id="home-score">0</p>
                   </div>
                 </div>
               </section>
 
               <section class="btn-points-container">
                 <div class="points-container">
-                  <button class="img-button" id="home-plus1-btn">
+                  <button class="img-button" id="home-plus1-btn" onclick="homePlus1()">
                     <img class="bg-btn" src="images/basketball-btn.png" />
                   </button class="img-button">
                 </div>
                 <div class="points-container">
-                  <button class="img-button" id="home-plus2-btn">
+                  <button class="img-button" id="home-plus2-btn" onclick="homePlus2()">
                     <img class="bg-btn" src="images/basketball-btn.png" />
                   </button class="img-button">
                 </div>
                 <div class="points-container">
-                  <button class="img-button" id="home-plus3-btn" >
+                  <button class="img-button" id="home-plus3-btn" onclick="homePlus3()" >
                     <img class="bg-btn" src="images/basketball-btn.png" />
                   </button class="img-button">
                 </div>
@@ -64,14 +64,14 @@
                             <h2 class="quarter-fonts">Q T R</h2>
                         </div>
                         <div class="quarter-box">
-                            <p class="quarter" id="quarter-board">01</p>
+                            <p class="quarter" id="quarter-board">1</p>
                         </div>
                     </div>
               </section>
               <!--* QUARTER BUTTONS-->
               <section class="quarter-btn-container">
-                <button class="quarter-buttons" id="end-quarter-btn">END QTR</button>
-                <button class="quarter-buttons" id="end-quarter-btn">NEXT QTR</button>
+                <button class="quarter-buttons" id="end-quarter-btn" onclick="endQuarter()">END QTR</button>
+                <button class="quarter-buttons" id="end-quarter-btn" onclick="nextQuarter()">NEXT QTR</button>
               </section>
               <!--* TEAM ICONS-->
               <section class="team-icons">
@@ -90,7 +90,7 @@
 
               <!--*QUARTER SCORE RECAP BOXES-->
                 <section class="score-recap-container">
-                    <div class="team-quarter-score" id="home-quarter-score1">23</div>
+                    <div class="team-quarter-score" id="home-quarter-score1"></div>
                     <div class="team-quarter-score" id="home-quarter-score2"></div>
                     <div class="team-quarter-score" id="home-quarter-score3"></div>
                     <div class="team-quarter-score" id="home-quarter-score4"></div>
@@ -98,10 +98,10 @@
                     <div class="team-quarter-score" id="quarter-counter">2<sup>nd</sup></div>
                     <div class="team-quarter-score" id="quarter-counter">3<sup>rd</sup></div>
                     <div class="team-quarter-score" id="quarter-counter">4<sup>th</sup></div>
-                    <div class="team-quarter-score" id="away-quarter-score1"></div>
-                    <div class="team-quarter-score" id="away-quarter-score2"></div>
-                    <div class="team-quarter-score" id="away-quarter-score3"></div>
-                    <div class="team-quarter-score" id="away-quarter-score4"></div>
+                    <div class="team-quarter-score" id="guest-quarter-score1">-</div>
+                    <div class="team-quarter-score" id="guest-quarter-score2">-</div>
+                    <div class="team-quarter-score" id="guest-quarter-score3">-</div>
+                    <div class="team-quarter-score" id="guest-quarter-score4">-</div>
                 </section>
 
             </div>
@@ -113,23 +113,23 @@
                           <h2>G U E S T</h2>
                         </div>
                         <div class="score-box">
-                          <p id="guest-score">29</p>
+                          <p id="guest-score">0</p>
                         </div>
                 </section>
 
                 <section class="btn-points-container">
                     <div class="points-container">
-                      <button class="img-button" id="guest-point1-btn">
+                      <button class="img-button" id="guest-point1-btn" onclick="guestPlus1()">
                         <img class="bg-btn" src="images/basketball-btn.png" />
                       </button class="img-button">
                     </div>
                     <div class="points-container">
-                      <button class="img-button" id="guest-point2-btn">
+                      <button class="img-button" id="guest-point2-btn" onclick="guestPlus2()">
                         <img class="bg-btn" src="images/basketball-btn.png" />
                       </button class="img-button">
                     </div>
                     <div class="points-container">
-                      <button class="img-button" id="guest-point3-btn">
+                      <button class="img-button" id="guest-point3-btn" onclick="guestPlus3()">
                         <img class="bg-btn" src="images/basketball-btn.png" />
                       </button class="img-button">
                     </div>
@@ -151,5 +151,6 @@
         </ul>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
