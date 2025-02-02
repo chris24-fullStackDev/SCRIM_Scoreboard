@@ -95,7 +95,9 @@ function nextQuarter() {
   if (quarterValue < 4) {
     quarterValue += 1;
     quarterBoard.textContent = quarterValue;
+  } else { alert("End of Quarter. Click 'reset' to start new game match score.");
   }
+
 }
 
 function reset() {
